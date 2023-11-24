@@ -19,7 +19,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-jdbc' // 자바는 DB 와 연결하기 위해 jdbc 드라이버가 필요
+//	implementation 'org.springframework.boot:spring-boot-starter-jdbc' // 자바는 DB 와 연결하기 위해 jdbc 드라이버가 필요
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	runtimeOnly 'com.h2database:h2' // h2 데이터베이스 클라이언트
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
