@@ -28,6 +28,8 @@ public class MemberService {
 //            throw new IllegalStateException("이미 존재하는 회원입니다.");
 //        });
 
+        long start = System.currentTimeMillis();
+
         //  같은 이름이 있는 중복 회원x
         validateDuplicateMember(member);
         memberRepository.save(member);

@@ -12,7 +12,7 @@ java {
 }
 
 repositories {
-	// 아래 dependencies 의 라이브러리들을 가져오기 위해 maven central 라는 사이트에서 가져오게 설정
+	// 아래 dependencies 의 라이브러리들을 가져오기 위해 maven central 라는 사이트에서 가져오게 설정WW
 	mavenCentral()
 }
 

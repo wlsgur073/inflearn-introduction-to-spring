@@ -1,5 +1,6 @@
 package hello.hellospring;
 
+import hello.hellospring.aop.TimeTraceAop;
 import hello.hellospring.repository.JdbcTemplateMemberRepository;
 import hello.hellospring.repository.JpaMemberRepository;
 import hello.hellospring.repository.MemberRepository;
@@ -53,5 +54,12 @@ public class SpringConfig {
 ////        return new JdbcMemberRepository(dataSource);
 ////        return new JdbcTemplateMemberRepository(dataSource);
 //        return new JpaMemberRepository(em);
+//    }
+
+//    aop 도 spring configuration 설정 해주는 곳에서 bean 을 생성하는 것이 문서 작성에 좋다.
+//    이번 프로젝트에서는 그냥 해당 aop 에 어노테이션을 붙여주는 것으로 생략한다.
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
 //    }
 }
